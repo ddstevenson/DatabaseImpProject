@@ -13,7 +13,10 @@ In order to generate the data, we first downloaded and analyzied a set of python
 For this project we are using linux on an x86 processor running PostgreSQL. We chose this database because both project partners have experience working with it, because it's cheaply availiable, and because it's very well supported within this classroom enviornment. Although we both have experience with other, commercial, DBMSs that are more popular, it seemed prudent to stick with what's been demonstrated and supported for this class.
 
 ## Demonstrate you have loaded data into that system
-
+https://github.com/ddstevenson/DatabaseImpProject/blob/main/onektup.png
+https://github.com/ddstevenson/DatabaseImpProject/blob/main/tenktup1.png
+https://github.com/ddstevenson/DatabaseImpProject/blob/main/tenktup2.png
+https://github.com/ddstevenson/DatabaseImpProject/blob/main/proof%20of%20table%20length.png
 
 ## Include lessons learned or issues encountered
 The primary issue we've encountered so far is our inability to connect to the database from pgAdmin -- a small issue to be sure, but it would probably benefit us in the course of the project if we could troubleshoot this issue. Otherwise, the project has proceeded smoothly thus far.
