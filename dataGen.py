@@ -47,8 +47,8 @@ def dataGenerator(maxtuples):
 # NOTE: maxtuples must be divisible by 4, otherwise program 
 # will error. This is due to string4's attribute structure.
 # 10K, 100K, 1M will all work. 
-maxtuples = 252
-testTup = dataGenerator(maxtuples) 
+maxtuples = 1000
+finaltup = dataGenerator(maxtuples) 
 
 """ test output, print to screen """
 #print(testTup)
@@ -56,4 +56,5 @@ testTup = dataGenerator(maxtuples)
 # export to CSV file
 # Rename output file with desired title 
 """ uncomment the next line to output to file """
-# testTup.to_csv('testTuples.csv')
+finaltup.to_csv('tenktup.csv', index = True)
+print("file complete")
