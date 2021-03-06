@@ -29,10 +29,15 @@ def dataGenerator(maxtuples):
     evenOnePercent = onePercent * 2
     oddOnePercent = (onePercent * 2) + 1
 
-    stringu1 = string_u(unique1)  # see stringsGen.py for defs
-    stringu2 = string_u(unique2)  # see stringsGen.py for defs
+    # Removed strings from gen for those experiments that don't require them...
+    stringu1 = ["Fake News" for x in range(maxtuples)]
+    stringu2 = ["Fake News" for x in range(maxtuples)]
+    string4 = ["Fake News" for x in range(maxtuples)]
 
-    string4 = stringFour(maxtuples)  # see stringsGen.py for defs
+    # Uncomment below strings to generate strings for testing
+    # stringu1 = string_u(unique1)  # see stringsGen.py for defs
+    # stringu2 = string_u(unique2)  # see stringsGen.py for defs
+    # string4 = stringFour(maxtuples)  # see stringsGen.py for defs
 
     # assemble attributes for dataframe export
     df = {'unique1': unique1, 'unique2': unique2, 'two': two, 'four': four, 'ten': ten,
@@ -48,7 +53,7 @@ def dataGenerator(maxtuples):
 # NOTE: maxtuples must be divisible by 4, otherwise program 
 # will error. This is due to string4's attribute structure.
 # 10K, 100K, 1M will all work. 
-maxtuples = 1000
+maxtuples = 1000000
 finaltup = dataGenerator(maxtuples)
 
 """ test output, print to screen """
@@ -59,5 +64,5 @@ finaltup = dataGenerator(maxtuples)
 """ uncomment the next line to output to file """
 # finaltup.to_csv('testTuples.csv')
 
-finaltup.to_csv('tenmiltup.csv')
+finaltup.to_csv('miltup1.csv', header=False)
 print("file complete")

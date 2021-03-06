@@ -32,6 +32,8 @@ def string_u(unique_arr):
     stringu = stringu.astype('U52')  # set size to allow for 52 char string
     for i in range(len(unique_arr)):  # fill the array with the random strings
         stringu = np.append(stringu, convert_to_string(unique_arr[i]))  # to size maxtuples
+        if i % 1000 == 0:
+            print('Record: ' + str(i))
 
     return stringu
 
