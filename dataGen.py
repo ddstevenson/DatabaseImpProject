@@ -42,7 +42,7 @@ def dataGenerator(maxtuples):
     # assemble attributes for dataframe export
     df = {'unique1': unique1, 'unique2': unique2, 'two': two, 'four': four, 'ten': ten,
           'twenty': twenty, 'onePercent': onePercent, 'tenPercent': tenPercent, 'twentyPercent': twentyPercent,
-          'fiftyPercent': fiftyPercent, 'unique3': unique3, 'evenOnePercent': evenOnePercent,
+          'fiftyPercent': fiftyPercent, 'evenOnePercent': evenOnePercent,
           'oddOnePercent': oddOnePercent, 'stringu1': stringu1, 'stringu2': stringu2, 'string4': string4}
     df1 = pd.DataFrame(data=df)
 
@@ -53,7 +53,7 @@ def dataGenerator(maxtuples):
 # NOTE: maxtuples must be divisible by 4, otherwise program 
 # will error. This is due to string4's attribute structure.
 # 10K, 100K, 1M will all work. 
-maxtuples = 1000000
+maxtuples = 100000
 finaltup = dataGenerator(maxtuples)
 
 """ test output, print to screen """
@@ -64,5 +64,5 @@ finaltup = dataGenerator(maxtuples)
 """ uncomment the next line to output to file """
 # finaltup.to_csv('testTuples.csv')
 
-finaltup.to_csv('miltup1.csv', header=False)
+finaltup.to_csv('hundredktup2.csv', header=False)
 print("file complete")
